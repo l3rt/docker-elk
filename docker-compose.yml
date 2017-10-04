@@ -40,7 +40,7 @@ services:
       - elasticsearch
 
   l3rt:
-    image: dimafeng/l3rt:0.1.2
+    image: dimafeng/l3rt:0.1.5
     ports:
       - "8080:8080"
     networks:

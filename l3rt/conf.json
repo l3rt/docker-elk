@@ -1,15 +1,20 @@
 {
   "sources": [
     {
-      "name": "elasticTest",
-      "sourceType": "lert.elasticsearch.ElasticSearchProcessor",
-      "params": {
-        "host": "elasticsearch",
-        "port": "9200",
-        "schema": "http"
-      }
+      "url": "elasticSearch:http://elasticsearch:9200"
     }
   ],
   "targetSettings": {
+    "mailServer": {
+      "host": "smtp.gmail.com",
+      "port": "465",
+      "auth": true,
+      "username": "myemail@test.com",
+      "password": "password"
+    },
+    "hipchat": {
+      "accessToken": "...",
+      "baseUrl": "https://api.hipchat.com/v2/"
+    }
   }
 }
